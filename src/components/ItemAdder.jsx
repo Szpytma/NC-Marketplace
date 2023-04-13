@@ -44,6 +44,7 @@ function ItemAdder({ setItems }) {
           onChange={({ target }) => {
             setItemName(target.value);
           }}
+          required
         />
       </div>
       <div>
@@ -55,6 +56,9 @@ function ItemAdder({ setItems }) {
           onChange={({ target }) => {
             setImgUrl(target.value);
           }}
+          //TODO validate link
+
+          required
           value={imgUrl}
         />
       </div>
@@ -67,6 +71,7 @@ function ItemAdder({ setItems }) {
           onChange={({ target }) => {
             setPrice(target.value);
           }}
+          required
           value={price}
         />
       </div>
@@ -79,6 +84,7 @@ function ItemAdder({ setItems }) {
           onChange={({ target }) => {
             setDescription(target.value);
           }}
+          required
           value={description}
         />
       </div>
