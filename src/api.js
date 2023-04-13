@@ -7,3 +7,9 @@ export const fetchItems = () => {
     return data.items;
   });
 };
+
+export const fetchItemById = (id) => {
+  return axios.get(`${baseUrl}/items/${id}`).then(({ data }) => {
+    return data.item;
+  });
+};

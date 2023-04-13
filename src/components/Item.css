@@ -1,0 +1,43 @@
+.Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+.Item h3 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.Item p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.Item img {
+  display: block;
+  margin: 20px auto;
+  max-width: 30%;
+}
+
+@media (max-width: 767px) {
+  .Item {
+    padding: 20px;
+  }
+
+  .Item h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+
+  .Item p {
+    font-size: 1rem;
+  }
+}
