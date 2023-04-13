@@ -3,6 +3,7 @@ import ItemCard from "./ItemCard";
 import "./ItemCard.css";
 import "./ItemList.css";
 import * as api from "../api.js";
+import ItemAdder from "./ItemAdder";
 
 function ItemList() {
   const [items, setItems] = useState([]);
@@ -20,19 +21,24 @@ function ItemList() {
   }
 
   return (
-    <div className="ItemList">
-      <ul>
-        {items.map((item) => (
-          <ItemCard
-            key={item.item_id}
-            item_id={item.item_id}
-            item_name={item.item_name}
-            price={item.price}
-            img_url={item.img_url}
-            category_name={item.category_name}
-          />
-        ))}
-      </ul>
+    <div>
+      <div>
+        <ItemAdder setItems={setItems} />
+      </div>
+      <div className="ItemList">
+        <ul>
+          {items.map((item) => (
+            <ItemCard
+              key={item.item_id}
+              item_id={item.item_id}
+              item_name={item.item_name}
+              price={item.price}
+              img_url={item.img_url}
+              category_name={item.category_name}
+            />
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
