@@ -8,6 +8,13 @@ export const fetchItems = () => {
   });
 };
 
+//TODO
+export const postItem = (itemToAdd) => {
+  return axios.post(`${baseUrl}/items`).then(({ data }) => {
+    return "";
+  });
+};
+
 export const fetchItemById = (id) => {
   return axios.get(`${baseUrl}/items/${id}`).then(({ data }) => {
     return data.item;

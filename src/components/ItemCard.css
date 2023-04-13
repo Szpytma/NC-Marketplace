@@ -4,7 +4,9 @@
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   margin: 20px;
   overflow: hidden;
-  width: 300px;
+  display: inline-block;
+  width: calc(50% - 40px);
+  vertical-align: top;
 }
 
 .ItemCard img {
@@ -29,5 +31,6 @@
   .ItemCard {
     margin: 20px auto;
     width: calc(50% - 40px);
+    display: block;
   }
 }

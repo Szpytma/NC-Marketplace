@@ -1,0 +1,40 @@
+.PostItem form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+}
+
+.PostItem label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.PostItem input[type="text"],
+.PostItem input[type="textBox"],
+.PostItem select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.PostItem input[type="text"]:focus,
+.PostItem input[type="textBox"]:focus,
+.PostItem select:focus {
+  outline: none;
+  border-color: #8a2be2;
+}
+
+.PostItem button[type="submit"] {
+  background-color: #8a2be2;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.PostItem button[type="submit"]:hover {
+  background-color: #6600cc;
+}
