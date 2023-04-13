@@ -24,7 +24,6 @@ function ItemList() {
       <ul>
         {items.map((item) => (
           <ItemCard
-            className="ItemCard"
             key={item.item_id}
             item_id={item.item_id}
             item_name={item.item_name}

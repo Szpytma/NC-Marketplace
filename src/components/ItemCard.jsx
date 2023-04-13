@@ -11,7 +11,7 @@ function ItemCard({
       <li key={item_id}>
         <h2>{item_name}</h2>
         <img src={img_url} alt={item_name} />
-        <p>{price}</p>
+        <p>$ {price}</p>
         <p>{category_name}</p>
       </li>
     </div>

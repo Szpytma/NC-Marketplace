@@ -9,7 +9,8 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<ItemList />} />
+        <Route path="/" element={<h1>1</h1>} />
+
         <Route path="/items" element={<ItemList />} />
       </Routes>
       <ItemList />
