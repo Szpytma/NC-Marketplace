@@ -5,6 +5,7 @@ function Header() {
     <header>
       <Link to="/items">
         <h1>NC Marketplace</h1>
+        <button />
       </Link>
     </header>
   );

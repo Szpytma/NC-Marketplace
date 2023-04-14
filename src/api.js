@@ -22,3 +22,15 @@ export const fetchItemById = (id) => {
     return data.item;
   });
 };
+
+export const fetchUsers = () => {
+  return axios.get(`${baseUrl}users`).then(({ data }) => {
+    return data.users;
+  });
+};
+
+export const postUser = (user) => {
+  return axios.post(`${baseUrl}users`, user).then(({ data }) => {
+    return data.user;
+  });
+};
