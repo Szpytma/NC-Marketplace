@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ItemAdder.css";
+import "./styles/ItemAdder.css";
 import * as api from "../api.js";
 function ItemAdder({ setItems }) {
   const [itemName, setItemName] = useState("");

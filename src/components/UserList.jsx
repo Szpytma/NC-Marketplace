@@ -3,9 +3,9 @@ import UserCard from "./UserCard.jsx";
 
 import * as api from "../api.js";
 import UserAdd from "./UserAdd.jsx";
-import "./UserList.css";
+import "./styles/UserList.css";
 
-function UserList() {
+function UserList({ user, setUser }) {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -27,6 +27,8 @@ function UserList() {
           <div className="UserList">
             {users.map((user) => (
               <UserCard
+                user={user}
+                setUser={setUser}
                 key={user.username}
                 username={user.username}
                 avatar_url={user.avatar_url}

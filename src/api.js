@@ -39,3 +39,9 @@ export const postUser = (user) => {
     return data.user;
   });
 };
+
+export const fetchBasketByUserName = (username) => {
+  return axios.get(`${baseUrl}users/${username}/basket`).then(({ data }) => {
+    return data.items;
+  });
+};

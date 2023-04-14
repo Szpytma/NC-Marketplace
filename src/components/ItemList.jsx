@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ItemCard from "./ItemCard";
-import "./ItemCard.css";
-import "./ItemList.css";
+import "./styles/ItemCard.css";
+import "./styles/ItemList.css";
 import * as api from "../api.js";
 import ItemAdder from "./ItemAdder";
 
