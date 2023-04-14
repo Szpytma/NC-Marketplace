@@ -28,6 +28,11 @@ export const fetchUsers = () => {
     return data.users;
   });
 };
+export const fetchUserByUserName = (userName) => {
+  return axios.get(`${baseUrl}users/${userName}`).then(({ data }) => {
+    return data.user;
+  });
+};
 
 export const postUser = (user) => {
   return axios.post(`${baseUrl}users`, user).then(({ data }) => {

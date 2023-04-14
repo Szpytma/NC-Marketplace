@@ -4,8 +4,10 @@ function Header() {
   return (
     <header>
       <Link to="/items">
-        <h1>NC Marketplace</h1>
-        <button />
+        <h2>NC Marketplace</h2>
+      </Link>
+      <Link to="/users">
+        <h2>Users</h2>
       </Link>
     </header>
   );

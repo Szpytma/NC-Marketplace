@@ -19,7 +19,6 @@ function UserList() {
   if (isLoading) {
     return <p>is loading...</p>;
   }
-  console.log(users);
   return (
     <div>
       <div>
